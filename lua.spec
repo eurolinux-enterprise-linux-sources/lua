@@ -1,6 +1,6 @@
 Name:           lua
 Version:        5.1.4
-Release:        14%{?dist}
+Release:        15%{?dist}
 Summary:        Powerful light-weight programming language
 Group:          Development/Languages
 License:        MIT
@@ -101,6 +101,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.a
 
 %changelog
+* Wed Nov 25 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 5.1.4-15
+- Also use lib64 instead of lib on aarch64 (#1283705)
+
 * Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 5.1.4-14
 - Mass rebuild 2014-01-24
 

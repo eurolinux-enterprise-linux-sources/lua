@@ -41711,7 +41711,7 @@ diff -urN lua-5.1.4/src/luaconf.h lua-5.1.4-autotoolize/src/luaconf.h
 diff -urN lua-5.1.4/src/luaconf.h.template.in lua-5.1.4-autotoolize/src/luaconf.h.template.in
 --- lua-5.1.4/src/luaconf.h.template.in	1970-01-01 01:00:00.000000000 +0100
 +++ lua-5.1.4-autotoolize/src/luaconf.h.template.in	2008-09-03 13:18:37.000000000 +0200
-@@ -0,0 +1,754 @@
+@@ -0,0 +1,755 @@
 +/*
 +** $Id: luaconf.h,v 1.81 2006/02/10 17:44:06 roberto Exp $
 +** Configuration file for Lua
@@ -41813,7 +41813,8 @@ diff -urN lua-5.1.4/src/luaconf.h.template.in lua-5.1.4-autotoolize/src/luaconf.
 +/** autotools-patch **/
 +#define LUA_LDIR	"%lua_datadir%/lua/5.1/"
 +#if defined __alpha__ || defined __ia64__ || defined __powerpc64__ || \
-+    defined __s390x__ || defined __sparc64__ || defined __x86_64__
++    defined __s390x__ || defined __sparc64__ || defined __x86_64__ || \
++    defined __aarch64__
 +#define LUA_CDIR	"/usr/lib64/lua/5.1/"
 +#else
 +#define LUA_CDIR	"/usr/lib/lua/5.1/"
